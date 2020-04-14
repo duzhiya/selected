@@ -1,0 +1,104 @@
+<!--index.wxml-->
+<view class="">
+	<!-- 搜索 -->
+	<van-search value="{{ value }}" placeholder="搜索商品名" />
+	<van-grid column-num="4" border="{{ false }}">
+		<!-- 会员码 -->
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 60rpx; height: 30px;" src="/imgs/tab/扫码.png" />
+			会员码
+		</van-grid-item>
+		<!-- 分类 -->
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 60rpx; height: 30px;" src="/imgs/index/分类.png" />
+			分类
+		</van-grid-item>
+		<!-- 购物车 -->
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 60rpx; height: 30px;" src="/imgs/index/购物车.png" />
+			购物车
+		</van-grid-item>
+		<!-- 免费 -->
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 60rpx; height: 30px;" src="/imgs/index/免费.png" />
+			绑定导购
+		</van-grid-item>
+	</van-grid>
+	<!-- 轮播 -->
+	<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000" circular="true">
+		<block wx:for="{{focus}}" wx:for-index="index">
+			<swiper-item>
+				<image src="{{item.photo}}" class="slide-image" mode="aspectFill" />
+			</swiper-item>
+		</block>
+	</swiper>
+	<!-- 购物卷 -->
+	<van-grid column-num="3" border="{{ false }}">
+		<!-- 会员码 -->
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 60rpx; height: 30px;" src="/imgs/index/标签.png" />
+			每周2上新
+		</van-grid-item>
+		<!-- 分类 -->
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 60rpx; height: 30px;" src="/imgs/index/免运费.png" />
+			官网免运费
+		</van-grid-item>
+		<!-- 购物车 -->
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 60rpx; height: 30px;" src="/imgs/index/7.png" />
+			无理由退货
+		</van-grid-item>
+	</van-grid>
+	<van-grid column-num="1" border="{{ false }}">
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 90%; height: ;" src="https://pic.downk.cc/item/5e956183c2a9a83be5a2a8b5.jpg" />
+		</van-grid-item>
+	</van-grid>
+	<!-- 视频 -->
+	<video preload="auto" id="myVideo" src="{{video}}" danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
+	<!-- 快速导航 -->
+	<van-grid column-num="1" border="{{ false }}">
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 90%; height: ;" src="https://pic.downk.cc/item/5e956128c2a9a83be5a26c13.png" />
+		</van-grid-item>
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 90%; height: ;" src="https://pic.downk.cc/item/5e956128c2a9a83be5a26c16.jpg" />
+		</van-grid-item>
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 90%; height: ;" src="https://pic.downk.cc/item/5e9561d7c2a9a83be5a2e055.jpg" />
+		</van-grid-item>
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width: 90%; height: ;" src="https://pic.downk.cc/item/5e9561d7c2a9a83be5a2e051.jpg" />
+		</van-grid-item>
+	</van-grid>
+	<!-- 绿线 -->
+	<view class="lvxian">
+	</view>
+	<view class="theedit">
+		<text class="theedit_1">the edit\n</text>
+		<text class="theedit_2">COLLECTION\n</text>
+		<text class="theedit_3">S E L E C T E D</text>
+	</view>
+	<van-grid column-num="1" border="{{ false }}">
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width:100%; height: 750rpx;" src="https://pic.downk.cc/item/5e95680fc2a9a83be5a7445a.jpg" />
+		</van-grid-item>
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width:100%; height: 750rpx;" src="https://pic.downk.cc/item/5e9568b7c2a9a83be5a7c8a0.jpg" />
+		</van-grid-item>
+		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+			<image style="width:100%; height: 750rpx;" src="https://pic.downk.cc/item/5e956913c2a9a83be5a81415.jpg" />
+		</van-grid-item>
+	</van-grid>
+	<!-- 返回顶部 -->
+	<view bindtap="showPopup">
+		<image src="/imgs/index/钢铁侠.png" is-link class="kefu"></image>
+	</view>
+	<van-popup show="{{ show }}" bind:close="onClose">
+		<view class="onClose">
+			<image style="" src="https://pic.downk.cc/item/5e957145c2a9a83be5adce59.jpg"></image>
+		</view>
+	</van-popup>
+	<image src='/imgs/index/上.png' class='goTop' hidden='{{!floorstatus}}' bindtap="goTop"></image>
+</view>

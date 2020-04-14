@@ -1,0 +1,73 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/member/member",
+    "pages/trend/trend",
+    "pages/vip/vip",
+    "pages/nearby/nearby"
+  ],
+  "usingComponents": {
+    "van-button": "/dist/button/index",
+    "van-row": "/dist/row/index",
+    "van-col": "/dist/col/index",
+    "van-field": "/dist/field/index",
+    "van-tab": "/dist/tab/index",
+    "van-tabs": "/dist/tabs/index",
+    "van-divider": "/dist/divider/index",
+    "van-popup": "/dist/popup/index",
+    "van-stepper": "/dist/stepper/index",
+    "van-cell": "/dist/cell/index",
+    "van-cell-group": "/dist/cell-group/index",
+    "van-overlay": "/dist/overlay/index",
+    "van-search": "/dist/search/index",
+    "van-grid": "/dist/grid/index",
+    "van-grid-item": "/dist/grid-item/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "SELECTED",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imgs/tab/商城.png",
+        "selectedIconPath": "imgs/tab/商城1.png",
+        "text": "购物商城"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "iconPath": "imgs/tab/会员.png",
+        "selectedIconPath": "imgs/tab/会员1.png",
+        "text": "会员中心"
+      },
+      {
+        "pagePath": "pages/trend/trend",
+        "iconPath": "imgs/tab/潮流1.png",
+        "selectedIconPath": "imgs/tab/潮流.png",
+        "text": "潮流资讯"
+      },
+      {
+        "pagePath": "pages/vip/vip",
+        "iconPath": "imgs/tab/扫码1.png",
+        "selectedIconPath": "imgs/tab/扫码.png",
+        "text": "会员码"
+      },
+      {
+        "pagePath": "pages/nearby/nearby",
+        "iconPath": "imgs/tab/附近1.png",
+        "selectedIconPath": "imgs/tab/附近.png",
+        "text": "附近门店"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,1 +1,15 @@
-/* pages/trend/trend.wxss */
+/* 图片 */
+.trend image{
+  width: 100%;
+  margin-bottom: 10rpx;
+}
+/* 文字 */
+.trend_txt{
+  font-size: 35rpx;
+  margin-bottom: 20rpx;
+}
+.trend_txt1{
+  height: 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+}

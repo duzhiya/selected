@@ -1,0 +1,39 @@
+<view class="trend">
+	<van-row class="trend_txt">
+		<van-col span="20" offset="1">
+			<text>春意踏青趣，得意不忘形！</text>
+		</van-col>
+	</van-row>
+	<view class="trend_txt1">
+		<van-row>
+			<van-col span="24" offset="1">
+				2020-04-08 11:58:11
+			</van-col>
+		</van-row>
+	</view>
+	<!-- 1 -->
+	<view class="trend1">
+		<image src="https://pic.downk.cc/item/5e96f8cbc2a9a83be5be0ff9.jpg"></image>
+	</view>
+	<!-- 2 -->
+	<view class="trend2">
+		<image src="https://pic.downk.cc/item/5e96f9f4c2a9a83be5bef9db.jpg"></image>
+	</view>
+	<!-- 3 -->
+	<view class="trend3">
+		<image src="https://pic.downk.cc/item/5e96fba5c2a9a83be5c02dc6.jpg"></image>
+	</view>
+	<!-- 4 -->
+	<view class="trend4">
+		<image src="https://pic.downk.cc/item/5e96fa94c2a9a83be5bf7f35.jpg"></image>
+		男纯亚麻商务休闲长裤
+	</view>
+	<!-- 5 -->
+	<view class="trend3">
+		<image src="https://pic.downk.cc/item/5e96fc3dc2a9a83be5c08002.jpg"></image>
+	</view>
+	<!-- 6 -->
+	<view class="trend6">
+		<image src="https://pic.downk.cc/item/5e96fc3dc2a9a83be5c07ffd.jpg"></image>
+	</view>
+</view>

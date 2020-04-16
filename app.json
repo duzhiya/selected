@@ -1,9 +1,11 @@
 {
   "pages": [
+    "pages/index/Minute/Minute",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/member/member",
+    "pages/trend/trends/trends",
     "pages/trend/trend",
+    "pages/member/member",
+    "pages/logs/logs",
     "pages/vip/vip",
     "pages/nearby/nearby"
   ],
@@ -22,7 +24,8 @@
     "van-overlay": "/dist/overlay/index",
     "van-search": "/dist/search/index",
     "van-grid": "/dist/grid/index",
-    "van-grid-item": "/dist/grid-item/index"
+    "van-grid-item": "/dist/grid-item/index",
+    "van-tag": "/dist/tag/index"
   },
   "window": {
     "backgroundTextStyle": "light",

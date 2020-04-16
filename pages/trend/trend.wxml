@@ -1,2 +1,62 @@
-<!--pages/trend/trend.wxml-->
-<text>pages/trend/trend.wxml</text>
+<!-- 潮流页trend -->
+<view class="trend">
+	<!-- 1 -->
+	<view bindtap="gotrends">
+		<image src="https://pic.downk.cc/item/5e96d43bc2a9a83be5a4f345.png"></image>
+		<van-row class="trend_txt">
+			<van-col span="20" offset="1">
+				<text>春意踏青趣，得意不忘形！</text>
+			</van-col>
+		</van-row>
+		<view class="trend_txt1">
+			<van-row>
+				<van-col span="24" offset="1">
+					2020-04-08 11:58:11
+				</van-col>
+			</van-row>
+		</view>
+	</view>
+	<!-- 2 -->
+	<image src="https://pic.downk.cc/item/5e96d510c2a9a83be5a5a280.jpg"></image>
+	<van-row class="trend_txt">
+		<van-col span="23" offset="1">
+			<text>Christian Lacroix系列，浅春法韵，绕有风趣</text>
+		</van-col>
+	</van-row>
+	<view class="trend_txt1">
+		<van-row>
+			<van-col span="24" offset="1">
+				2020-04-08 11:58:11
+			</van-col>
+		</van-row>
+	</view>
+
+	<!-- 3 -->
+	<image src="https://pic.downk.cc/item/5e96d510c2a9a83be5a5a286.jpg"></image>
+	<van-row class="trend_txt">
+		<van-col span="20" offset="1">
+			<text>半熟少女恬静梦</text>
+		</van-col>
+	</van-row>
+	<view class="trend_txt1">
+		<van-row>
+			<van-col span="24" offset="1">
+				2020-04-08 11:58:11
+			</van-col>
+		</van-row>
+	</view>
+	<!-- 4 -->
+	<image src="https://pic.downk.cc/item/5e96d510c2a9a83be5a5a282.jpg"></image>
+	<van-row class="trend_txt">
+		<van-col span="20" offset="1">
+			<text>职场新贵，商务格调</text>
+		</van-col>
+	</van-row>
+	<view class="trend_txt1">
+		<van-row>
+			<van-col span="24" offset="1">
+				2020-04-08 11:58:11
+			</van-col>
+		</van-row>
+	</view>
+</view>

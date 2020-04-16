@@ -1,16 +1,26 @@
-// pages/trend/trend.js
+// pages/index/Minute/Minute.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    active: 0,
+    currentTab: 0
   },
-  gotrends(){
-    wx.navigateTo({
-      url: '/pages/trend/trends/trends',
-    })
+  switchNav: function (e) {
+    var page = this;
+    var id = e.target.id;
+    if (this.data.currentTab == id) {
+      return false;
+    } else {
+      page.setData({
+        currentTab: id
+      });
+    }
+    page.setData({
+      active: id
+    });
   },
   /**
    * 生命周期函数--监听页面加载

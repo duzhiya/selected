@@ -1,1 +1,138 @@
 /* pages/member/member.wxss */
+.member_top {
+  width: 100%;
+  height: 406rpx;
+  background-image: url(https://pic.downk.cc/item/5e96c3ccc2a9a83be598327b.jpg);
+  /* background-size: 100%; */
+  /* background-color: aquamarine; */
+}
+
+/* 去购物 */
+.meber_zuo {
+  position: relative;
+  /* top: 2rpx; */
+  z-index: 1111;
+}
+
+/* 白框 */
+.meber_fff {
+  position: relative;
+  top: 45rpx;
+  left: -30rpx;
+  background-color: #f8f7f4;
+  width: 280rpx;
+  height: 55rpx;
+  border-radius: 50rpx;
+}
+
+/* 头像和昵称 */
+.member_wx {
+  position: relative;
+  /* top: -10rpx; */
+}
+
+.member_wx image {
+  width: 100%;
+  height: 150rpx;
+  border-radius: 100rpx;
+  /* margin-top: -10%; */
+}
+
+
+/* 去购物 */
+.meber_zuo image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 购物车 */
+.member_shop1 {
+  width: 90%;
+  height: 90rpx;
+  padding-top: 20rpx;
+  padding-bottom: 60rpx;
+  background-color: #ffffff;
+  /* border:1px solid darkslategray; */
+  box-shadow: #7a8072 1px 1px 10px 1px;
+  margin-left: 5%;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.member_shop1 image {
+  width: 80%;
+  height: 70rpx;
+}
+
+.member_shop2 {
+  border-right: 1px solid darkslategray;
+  margin-left: 80rpx;
+  padding-right: 50rpx;
+}
+
+.member_shop3 {
+  margin-left: 80rpx;
+  padding-right: 50rpx;
+}
+
+/* .member_shop{ */
+/* border:1px solid #000000; */
+/* } */
+/* 轮播 */
+.swiper {
+  width: 100%;
+  height: 180rpx;
+  margin-top: 20rpx;
+}
+
+.swiper image {
+  width: 100%;
+  height: 200rpx;
+}
+
+/* 灰线 */
+.hui {
+  width: 100%;
+  height: 25rpx;
+  margin-bottom: 10rpx;
+  background-color: #ededed;
+}
+
+/* 我的订单 */
+.meber_you {
+  /* margin-bottom: 25rpx; */
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 10rpx;
+
+}
+
+.meber_you image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 代付款 */
+.meber_df {
+  font-size: 28rpx;
+}
+
+/* 积分列表 */
+.meber_jf {
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 10rpx;
+}
+
+.meber_jf image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+/* 底部图 */
+.meber_db {
+  width: 100%;
+  height: 130rpx;
+  background-image: url(https://pic.downk.cc/item/5e96b759c2a9a83be59090fd.jpg);
+  background-size: 100%;
+}

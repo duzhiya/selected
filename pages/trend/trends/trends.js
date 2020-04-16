@@ -1,4 +1,4 @@
-// pages/trend/trend.js
+// pages/trend/trends/trends.js
 Page({
 
   /**
@@ -7,11 +7,7 @@ Page({
   data: {
 
   },
-  gotrends(){
-    wx.navigateTo({
-      url: '/pages/trend/trends/trends',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

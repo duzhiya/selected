@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="">
 	<!-- 搜索 -->
-	<van-search value="{{ value }}" placeholder="搜索商品名" />
+	<van-search value="{{ value }}" placeholder="搜索商品名" style="font-size: 28rpx;" />
 	<van-grid column-num="4" border="{{ false }}">
 		<!-- 会员码 -->
 		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
@@ -9,10 +9,12 @@
 			会员码
 		</van-grid-item>
 		<!-- 分类 -->
-		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
-			<image style="width: 60rpx; height: 30px;" src="/imgs/index/分类.png" />
-			分类
-		</van-grid-item>
+		<view bindtap="goMinute">
+			<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+				<image style="width: 60rpx; height: 30px;" src="/imgs/index/分类.png" />
+				分类
+			</van-grid-item>
+		</view>
 		<!-- 购物车 -->
 		<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
 			<image style="width: 60rpx; height: 30px;" src="/imgs/index/购物车.png" />

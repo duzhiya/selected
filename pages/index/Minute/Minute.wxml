@@ -1,0 +1,112 @@
+<!-- 分类搜索页 -->
+<van-search value="{{ value }}" placeholder="请输入商品名称或款号" style="font-size: 135rpx;" />
+<view class='productNav'>
+	<!-- 左侧 -->
+	<view class='left'>
+		<view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>踏青出游</view>
+		<view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>一口价专区</view>
+		<view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>搭配师推荐</view>
+		<view class="{{active==3?'selected':'normal'}}" id="3" bindtap='switchNav'>2020春夏新品</view>
+		<view class="{{active==4?'selected':'normal'}}" id="4" bindtap='switchNav'>The edit系列</view>
+	</view>
+	<!-- 右侧 -->
+	<view class='right'>
+		<view class='type'>
+			<!-- current:当前所在滑块的 index -->
+			<!-- vertical:滑动方向是否为纵向 -->
+			<swiper current='{{currentTab}}' vertical='{{true}}'>
+				<!-- catchtouchmove 阻止弹窗后滚动穿透 -->
+				<swiper-item id="0" catchtouchmove="false">
+					<!-- 踏青出游 -->
+					<van-grid column-num="2" border="{{ false }}">
+						<!-- 1 -->
+						<view>
+							<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+								<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97b702c2a9a83be5258391.jpg" />
+								全部商品
+							</van-grid-item>
+						</view>
+						<!-- 2 -->
+						<view>
+							<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+								<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97b702c2a9a83be525838f.jpg" />
+								2件499元
+							</van-grid-item>
+						</view>
+						<!-- 3 -->
+						<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+							<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97b702c2a9a83be5258387.jpg" />
+							2件99元
+						</van-grid-item>
+					</van-grid>
+				</swiper-item>
+				<swiper-item id="1" catchtouchmove="false">
+					<!-- 一口价 -->
+					<van-grid column-num="2" border="{{ false }}">
+						<!-- 1 -->
+						<view>
+							<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+								<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97b702c2a9a83be525838c.jpg" />
+								全部商品
+							</van-grid-item>
+						</view>
+					</van-grid>
+				</swiper-item>
+				<swiper-item id="2" catchtouchmove="false">
+					<!-- 搭配师 -->
+					<van-grid column-num="2" border="{{ false }}">
+						<!-- 1 -->
+						<view>
+							<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+								<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97b702c2a9a83be5258385.jpg" />
+								全部商品
+							</van-grid-item>
+						</view>
+						<!-- 2 -->
+						<view>
+							<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+								<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97b9e4c2a9a83be526b647.jpg" />
+								男装推荐
+							</van-grid-item>
+						</view>
+						<!-- 3 -->
+						<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+							<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97b9e4c2a9a83be526b649.jpg" />
+							女装推荐
+						</van-grid-item>
+					</van-grid>
+				</swiper-item>
+				<swiper-item id="3" catchtouchmove="false">
+					<!-- 2020春夏 -->
+					<van-grid column-num="2" border="{{ false }}">
+						<!-- 1 -->
+						<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+							<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97ba77c2a9a83be526fb47.jpg" />
+							全部商品
+						</van-grid-item>
+						<!-- 2 -->
+						<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+							<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97ba77c2a9a83be526fb4d.jpg" />
+							春夏男装
+						</van-grid-item>
+					</van-grid>
+				</swiper-item>
+				<swiper-item id="4" catchtouchmove="false">
+					<!-- the系列 -->
+					<van-grid column-num="2" border="{{ false }}">
+						<!-- 1 -->
+						<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+							<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97ba77c2a9a83be526fb4a.jpg" />
+							全部商品
+						</van-grid-item>
+						<!-- 2 -->
+						<van-grid-item use-slot wx:for="{{ 1 }}" wx:for-item="index">
+							<image style="width: 100%; height: 100px;" src="https://pic.downk.cc/item/5e97ba77c2a9a83be526fb53.jpg" />
+							衬衫
+						</van-grid-item>
+					</van-grid>
+				</swiper-item>
+			</swiper>
+		</view>
+	</view>
+</view>

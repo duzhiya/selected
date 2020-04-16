@@ -27,7 +27,11 @@ Page({
       show: true
     });
   },
-  
+  goMinute(){
+    wx.navigateTo({
+      url: '/pages/index/Minute/Minute',
+    })
+  },
   onClose() {
     this.setData({
       show: false
